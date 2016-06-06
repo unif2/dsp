@@ -1,3 +1,4 @@
+Hello there!
 You have two options to complete parts 1-3 (Install, Editors, Command Line).  
 
 Option 1:  _Beginner:_ Edit markdown files directly on GitHub.  (Follow the instructions below).  
