@@ -68,6 +68,6 @@ I will be using vim.  It seems like the "safer" choice, according to the above t
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Either Atom or PyCharm.
 
  
