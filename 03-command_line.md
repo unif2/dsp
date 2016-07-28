@@ -38,7 +38,7 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-ls: list files in the working directory
+ls: list files in the working directory/n
 ls -a: list all files, including directory entries whose names begin with a dot (.).
 ls -l: Shows date and time, file size.  (The lowercase letter ``ell''.)  List in long format.  (See
              below.)  If the output is to a terminal, a total sum for all the
