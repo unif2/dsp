@@ -63,7 +63,27 @@ ls -p: display directories with /
 
 ###Q4.  Xargs   
 
-What does `xargs` do? Give an example of how to use it.
+example 1: Finding all the files with .c extension and deleting them
+
+$ ls
+one.c  one.h  two.c  two.h
+
+$ find . -name "*.c" | xargs rm -rf
+
+$ ls
+one.h  two.h
+
+example 2: Finding all the files with the .c extension and listing the ones that have 'stdlib.h' inside them
+
+$ find . -name '*.c' | xargs grep 'stdlib.h'
+./tgsthreads.c:#include
+./valgrind.c:#include
+./direntry.c:#include
+./xvirus.c:#include
+./temp.c:#include
+...
+...
+...
 
 
 
