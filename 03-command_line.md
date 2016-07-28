@@ -13,7 +13,17 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls
+echo
+export
+>
+<
+touch
+pushd
+popd
+mkdir
+cp
+rm -r
 
 ---
 
@@ -28,7 +38,14 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls: list files in the working directory
+ls -a: list all files, including directory entries whose names begin with a dot (.).
+ls -l: Shows date and time, file size.  (The lowercase letter ``ell''.)  List in long format.  (See
+             below.)  If the output is to a terminal, a total sum for all the
+             file sizes is output on a line before the long listing.
+ls -t: Sort by time modified (most recently modified first) before sort-
+             ing the operands by lexicographical order.
+ 
 
 ---
 
@@ -36,7 +53,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -t: displays newest files first
+ls -R: displays all files, including all subdirectories
+ls -r: displays files in reverse order
+ls -d: displays only directories
+ls -p: display directories with /
 
 ---
 
@@ -44,7 +65,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+
 
  
 
