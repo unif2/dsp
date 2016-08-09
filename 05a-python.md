@@ -51,9 +51,9 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
-import datetime\s
-date_start=datetime.datetime.strptime("01/02/2013","%m/%d/%Y")\s
-date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")\s
+import datetime
+date_start=datetime.datetime.strptime("01/02/2013","%m/%d/%Y")
+date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")
 
 b.  
 ```
