@@ -51,7 +51,9 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
+import datetime
+date_start=datetime.datetime.strptime("01/02/2013","%m/%d/%Y")
+date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")
 
 b.  
 ```
