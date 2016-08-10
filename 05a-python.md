@@ -52,10 +52,15 @@ date_stop = '07-28-2015'
 ```
 
 import datetime
+
 date_start=datetime.datetime.strptime("01/02/2013","%m/%d/%Y")
+
 date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")
+
 delta = date_stop - date_start
+
 print(delta.days)
+
 (937)
 
 b.  
@@ -64,10 +69,15 @@ date_start = '12312013'
 date_stop = '05282015'  
 ```
 import datetime
+
 date_start=datetime.datetime.strptime("12312013","%m%d%Y")
+
 date_stop=datetime.datetime.strptime("05282015","%m%d%Y")
+
 delta = date_stop - date_start
+
 print(delta.days)
+
 (513)
 
 
