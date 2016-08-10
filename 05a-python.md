@@ -77,27 +77,37 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 import string
+
 import datetime
 
 date_start = '15-Jan-1994'
+
 date_stop = '14-Jul-2015'
 
 s=date_start.split('-')
+
 t=date_stop.split('-')
 
 months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+
 s[1]=months.index(s[1])+1
+
 t[1]=months.index(t[1])+1
 
 for i in range(3):
+
   s[i]=int(s[i])
+
   t[i]=int(t[i])
   
 start = datetime.datetime(s[2],s[1],s[0])
+
 stop = datetime.datetime(t[2],t[1],t[0])
 
 delta = stop - start
+
 print(delta.days)
+
 (7850)
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
