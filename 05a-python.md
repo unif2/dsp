@@ -86,14 +86,20 @@ s=date_start.split('-')
 t=date_stop.split('-')
 
 months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-x={}
-for i in range(1,13):
-  x[i]=months[i]
-date_start=datetime.datetime.strptime("15-02/2013","%m/%d/%Y")
-date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")
-delta = date_stop - date_start
+s[1]=months.index(s[1])+1
+t[1]=months.index(t[1])+1
+
+for i in range(3):
+  s[i]=int(s[i])
+  t[i]=int(t[i])
+  
+start = datetime.datetime(s[2],s[1],s[0])
+stop = datetime.datetime(t[2],t[1],t[0])
+
+delta = stop - start
 print(delta.days)
-(937)
+(7850)
+
 >> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
