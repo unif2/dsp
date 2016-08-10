@@ -76,8 +76,19 @@ c.
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
 ```
-
+import string
 import datetime
+
+date_start = '15-Jan-1994'
+date_stop = '14-Jul-2015'
+
+s=date_start.split('-')
+t=date_stop.split('-')
+
+months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+x={}
+for i in range(1,13):
+  x[i]=months[i]
 date_start=datetime.datetime.strptime("15-02/2013","%m/%d/%Y")
 date_stop=datetime.datetime.strptime("07/28/2015","%m/%d/%Y")
 delta = date_stop - date_start
