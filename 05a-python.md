@@ -23,7 +23,8 @@ tuples will work as keys in dictionaries because tuples are hashable, as opposed
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Both are sequences of objects.  For a list, elements can be repeated, but not so for sets.  A set is more like a collection of dictionary keys without their accompanying values.  Therefore, since you cannot have repeated keys in a dictionary, you cannot have repeated elements in a set.  This is just like the sets in mathematics.  One can do operations between two sets, such as subtraction, union, intersection, just like in mathematics.  One can also check subset relationships using < and >.
+< and > for lists are only for comparisons between the first elements of the list.  So, [1,5,6] < [0,4,3].
 
 ---
 
