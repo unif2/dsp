@@ -38,7 +38,7 @@ Note that sets aren't faster than lists in general -- membership test is faster 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+The lambda command, like the def command, is used to create a function (more precisely, funciton objects).  In that sense, they are equivalent, but creating a function using lambda is advantageous when you need to make a short function that is to be used only once in your code.  If you need to use a function multiple times in your application, then it's better to section off that code and create a function out of it using def and then just call the function.  However, if you'd like to use a function only once, it may be more convenient (and faster) to create it using the lambda function, thereby making your code look cleaner.
 
 ---
 
