@@ -38,8 +38,33 @@ Note that sets aren't faster than lists in general -- membership test is faster 
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-The lambda command, like the def command, is used to create a function (more precisely, funciton objects).  In that sense, they are equivalent, but creating a function using lambda is advantageous when you need to make a short function that is to be used only once in your code.  If you need to use a function multiple times in your application, then it's better to section off that code and create a function out of it using def and then just call the function.  However, if you'd like to use a function only once, calling and using it at only one spot, it may be more convenient (and faster) to create it using the lambda function, without the need to even name it, thereby making your code look cleaner.  The body of a lambda can contain only a single expression, making lambdas short.  What can I put into a lambda?  Anything that returns a value (i.e. an expression), or anything that can be the right hand side of an assignment statement.  It's OK to put a function call in a lambda.  Print statements (which is a function in Python 3), functions that return None, and even conditional expressions can be inside a lambda.
+The lambda command, like the def command, is used to create a function (more precisely, funciton objects).  In that sense, they are equivalent, but creating a function using lambda is advantageous when you need to make a short function that is to be used only once in your code.  If you need to use a function multiple times in your application, then it's better to section off that code and create a function out of it using def and then just call the function.  However, if you'd like to use a function only once, calling and using it at only one spot, it may be more convenient (and faster) to create it using the lambda function, without the need to even name it, thereby making your code look cleaner.  The body of a lambda can contain only a single expression, making lambdas short.  What can I put into a lambda?  Anything that returns a value (i.e. an expression), or anything that can be the right hand side of an assignment statement.  It's OK to put a function call in a lambda.  Print statements (which is a function in Python 3), functions that return None, and even conditional expressions can be inside a lambda.  "The most common use for lambda is to create anonymous procedures for use in GUI callbacks. In those use cases, we don’t care about what the lambda returns, we care about what it does."
 
+Examples:
+
+square_root = lambda x: math.sqrt(x)
+or
+x=4
+(lambda x: math.sqrt(x))(x) # returns 2
+
+m = lambda x, y:   x + y   #  def sum(x,y): return x + y
+m(3,4) # returns 7
+
+frame = tk.Frame(parent)
+frame.pack()
+ 
+btn22 = tk.Button(frame, 
+        text="22", command=lambda: self.printNum(22))
+btn22.pack(side=tk.LEFT)
+ 
+btn44 = tk.Button(frame, 
+        text="44", command=lambda: self.printNum(44))
+btn44.pack(side=tk.LEFT)
+
+lambda: a if some_condition() else b
+lambda x: ‘big’ if x > 100 else ‘small’
+
+Reference: https://pythonconquerstheuniverse.wordpress.com/2011/08/29/lambda_tutorial/
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
