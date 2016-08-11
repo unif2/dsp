@@ -26,6 +26,12 @@ How are Python lists and sets similar and different? Give examples of using both
 Both are sequences of objects.  For a list, elements can be repeated, but not so for sets.  A set is more like a collection of dictionary keys without their accompanying values.  Therefore, since you cannot have repeated keys in a dictionary, you cannot have repeated elements in a set.  This is just like the sets in mathematics.  One can do operations between two sets, such as subtraction, union, intersection, just like in mathematics.  One can also check subset relationships using < and >.
 < and > for lists are only for comparisons between the first elements of the list.  So, [1,5,6] < [0,4,3].
 
+Sets are faster because, according to a Stack Overflow user, "Sets are implemented using hash tables. Whenever you add an object to a set, the position within the memory of the set object is determined using the hash of the object to be added. When testing for membership, all that needs to be done is basically to look if the object is at the position determined by its hash, so the speed of this operation does not depend on the size of the set. For lists, in contrast, the whole list needs to be searched, which will become slower as the list grows.
+
+This is also the reason that sets do not preserve the order of the objects you add.
+
+Note that sets aren't faster than lists in general -- membership test is faster for sets, and so is removing an element. As long as you don't need these operations, lists are often faster."
+
 ---
 
 ###Q3. Lambda Function
