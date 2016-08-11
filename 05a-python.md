@@ -71,7 +71,35 @@ Reference: https://pythonconquerstheuniverse.wordpress.com/2011/08/29/lambda_tut
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+A list comprehension enables you to construct list based on a rule without using a for loop.  For example, the code:
+def capitalize_all(t):
+    return [s.capitalize() for s in t]
+    
+takes a list of strings and capitalizes the first letter of each string in the list.  Contrast this with the following code that uses for loops:
+
+def capitalize_all(t):
+    res = []
+    for s in t:
+        res.append(s.capitalize())
+    return res
+    
+ Using a list comprehension can usually make the function faster than using for loops.
+ 
+ Another example:
+ 
+ def only_upper(t):
+    return [s for s in t if s.isupper()]
+    
+ which takes a string and returns the letters in the string which are upper case.  Contrast with this code which doesn't use list comprehensions:
+ 
+ def only_upper(t):
+    res = []
+    for s in t:
+        if s.isupper():
+            res.append(s)
+    return res
+
+
 
 ---
 
