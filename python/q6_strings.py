@@ -54,11 +54,10 @@ def fix_start(s):
     """
     if not isinstance(s, str) or len(s) < 1:
         raise NotImplementedError
-    elif any(l == s[0] for l in s[1:]):
-        for l in s[1:]:
-            
-    else:
-        return s
+    if any(l == s[0] for l in s[1:]):
+        return s[0]+s[1:].replace(s[0],'*')
+    return s    
+    
 
 # OR
 
