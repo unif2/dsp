@@ -85,7 +85,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    if not isinstance(a,str) or not isinstance(b,str) or len(a)<2 or len(b)<2:
+        raise NotImplementedError
+    return b[0]+a[1:]+' '+a[0]+b[1:]
 
 
 def verbing(s):
