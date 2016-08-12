@@ -101,8 +101,11 @@ def capitalize_all(t):
     
  Now using filter:
  
+ def upper(t):
+  return t.isupper()
+  
  x='uNIf2'
- list(filter((lambda x: [].append(s) if s.isupper() for s in x ), range(-5,5)))
+ list(filter(upper,x)) # returns ['N','I']
 
 Another example:
 # Using a list comprehension
@@ -119,6 +122,10 @@ list(map(sqr, items)) # returns [0,1,4,9,16,25]
 or (using lambda)
 
 list(map((lambda x: x **2), items))
+
+Set comprehensions:
+
+Dictionary comprehensions:
 
 ---
 
