@@ -99,7 +99,21 @@ def capitalize_all(t):
             res.append(s)
     return res
 
+Another example:
+# Using a list comprehension
+list = [0,1,2,3,4,5]
+sqr = [x**2 for x in list] # returns [0,1,4,9,16,25]
 
+# Using map instead
+items = [0,1,2,3,4,5]
+def sqr(x):
+ return x**2
+ 
+list(map(sqr, items)) # returns [0,1,4,9,16,25]
+
+or (using lambda)
+
+list(map((lambda x: x **2), items))
 
 ---
 
