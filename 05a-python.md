@@ -98,6 +98,11 @@ def capitalize_all(t):
         if s.isupper():
             res.append(s)
     return res
+    
+ Now using filter:
+ 
+ x='uNIf2'
+ list(filter((lambda x: [].append(s) if s.isupper() for s in x ), range(-5,5)))
 
 Another example:
 # Using a list comprehension
