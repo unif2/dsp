@@ -19,16 +19,6 @@ def donuts(count):
     else:
         return 'Number of donuts: many'
 
-    >>> donuts(4)
-    'Number of donuts: 4'
-    >>> donuts(9)
-    'Number of donuts: 9'
-    >>> donuts(10)
-    'Number of donuts: many'
-    >>> donuts(99)
-    'Number of donuts: many'
-    """
-    raise NotImplementedError
 
 
 def both_ends(s):
@@ -37,17 +27,13 @@ def both_ends(s):
     2 chars of the original string, so 'spring' yields 'spng'.
     However, if the string length is less than 2, return instead the
     empty string.
-
-    >>> both_ends('spring')
-    'spng'
-    >>> both_ends('Hello')
-    'Helo'
-    >>> both_ends('a')
-    ''
-    >>> both_ends('xyz')
-    'xyyz'
     """
-    raise NotImplementedError
+    if not isinstance(s, str):
+        raise NotImplementedError
+    elif len(s) < 2:
+        return ''
+    else:
+        return s[0]+s[1]+s[-2]+s[-1]
 
 
 def fix_start(s):
@@ -66,8 +52,24 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    if not isinstance(s, str) or len(s) < 1:
+        raise NotImplementedError
+    elif any(l == s[0] for l in s[1:]):
+        for l in s[1:]:
+            
+    else:
+        return s
 
+# OR
+
+def fix_start(s):
+    from collections import Counter
+    count = Counter(s)
+    if not isinstance(s, str) or len(s) < 1:
+        raise NotImplementedError
+    if count[s[0]]>1:
+        return s[0]+s[1:].replace(s[0],'*')
+    return s
 
 def mix_up(a, b):
     """
