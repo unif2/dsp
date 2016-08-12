@@ -65,6 +65,23 @@ lambda: a if some_condition() else b
 lambda x: ‘big’ if x > 100 else ‘small’
 
 Reference: https://pythonconquerstheuniverse.wordpress.com/2011/08/29/lambda_tutorial/
+
+Example I made up myself:
+
+class Triangle:
+	def __init__(self,base=0,height=0):
+		self.base = base
+		self.height = height
+		self.area = 0.5*self.base*self.height
+	def __str__(self):
+		return '(%f,%f,%f)' %(self.base,self.height,self.area)
+	def __repr__(self):
+		return repr((self.base,self.height,self.area))
+		
+triangles=[Triangle(6,6),Triangle(4,5),Triangle(1,1)]
+t=sorted(triangles,key=lambda triangle: triangle.area)
+print(t)
+
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
