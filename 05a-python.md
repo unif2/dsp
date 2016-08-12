@@ -124,9 +124,10 @@ or (using lambda)
 list(map((lambda x: x **2), items))
 
 Set comprehensions:
+{x**2 for x in range(5)} # returns set {0,1,4,9,16}
 
 Dictionary comprehensions:
-
+{x:x**2 for x in range(5)}
 ---
 
 ###Complete the following problems by editing the files below:
