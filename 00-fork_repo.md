@@ -56,8 +56,4 @@ Here's your first chance to practice this:
 
 What is your favorite [emoji](http://www.emoji-cheat-sheet.com/)?
 
-:smiley:
-
-testing 123
-
-
+:wink:
