@@ -162,4 +162,18 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+	if not isinstance(a, str) or not isinstance(b, str):
+		raise NotImplementedError
+	d = []
+	for i in a,b:
+		if len(i)%2 == 0:
+			x = len(i)//2
+		else:
+			x = len(i)//2 + 1
+		
+		first = i[0:x]
+		d.append(first)
+		second = i[x:len(i)]
+		d.append(second)
+		
+	return d[0]+d[2]+d[1]+d[3]
