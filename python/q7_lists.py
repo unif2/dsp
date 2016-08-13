@@ -113,4 +113,17 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+	if any(type(x)!=str for x in list1) or any(type(x)!=str for x in list2):
+		raise NotImplementedError
+	merged = []
+	while list1 and list2: # while both lists are nonempty
+		if list1[-1] > list2[-1]:
+			merged.append(list1.pop())
+		else:
+			merged.append(list2.pop())
+	# At this point, one of the lists is empty, and the other
+	# has been diminished, but still sorted in ascending order
+	# So now we add that set (but reversed) to our merged list
+	merged += sorted(list1 + list2, reverse = True)
+	merged.reverse()
+	return merged
