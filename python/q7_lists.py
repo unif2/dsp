@@ -15,8 +15,8 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    if any(type(x)==int for x in words):
-        raise NotImplementedError
+	if any(type(x)==int for x in words):
+		raise NotImplementedError
 	sum = 0
 	for word in t:
 		if len(word) >= 2 and word[0]==word[-1]:
@@ -38,7 +38,15 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+	if any(type(x)==int for x in words):
+		raise NotImplementedError
+	
+	xlist = [word for word in words if word[0]=='x']
+	notxlist = [word for word in words if word[0]!='x']
+	xlist.sort()
+	notxlist.sort()
+	merge = xlist + notxlist
+	return merge
 
 
 def sort_last(tuples):
@@ -55,7 +63,11 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+	if any(type(x)==tuple for x in tuples):
+		raise NotImplementedError	
+	y=sorted(tuples,key=lambda x: x[1])
+	return y
+    
 
 
 def remove_adjacent(nums):
