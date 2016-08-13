@@ -71,6 +71,7 @@ def sort_last(tuples):
 
 
 def remove_adjacent(nums):
+# This, surprisingly, took me many hours of convoluted and long (but failed) methods until I arrived at this one!
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -86,7 +87,16 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+	if any(type(x)!=int for x in nums):
+		raise NotImplementedError
+	i=0
+	while i != len(nums)-1:
+		if nums[i]==nums[i+1]:
+			del(nums[i])
+		else:
+			i = i+1
+	return nums
+
 
 
 def linear_merge(list1, list2):
