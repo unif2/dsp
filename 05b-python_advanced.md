@@ -19,7 +19,9 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q1. Find how many different degrees there are, and their frequencies: Ex:  PhD, ScD, MD, MPH, BSEd, MS, JD, etc.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> Returns {'jd': 1, 'ma': 1, '0': 1, 'md': 1, 'phd': 31, 'scd': 6, 'mph': 2, 'bsed': 1, 'ms': 2}
+# Therefore, there are 8 different degrees, one person didn't have any degrees.  By far, the most frequent degree
+# is the PhD
 
 
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
