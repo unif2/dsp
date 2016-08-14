@@ -39,3 +39,30 @@ print(hist)
 
 Q2
 
+title_index = data[0].index('title')
+titles = []
+for i in range(1,len(data)):
+	title = data[i][title_index]
+	title = title.lower()
+	if 'associate' in title:
+		titles.append('associate')
+	elif 'assistant' in title:
+		titles.append('assistant')
+	else:
+		titles.append('full')
+
+d = dict()
+# Code for making a dictionary of titles with counts, but of course
+# we can just use the get(word,0) + 1 like above, but let's do it this
+# way
+for x in titles:
+	if x not in d:
+		d[x] = 1
+	else:
+		d[x]+=1
+		
+print(d)
+# Returns {'assistant': 12, 'associate': 12, 'full': 13}
+
+Q3
+
