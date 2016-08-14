@@ -66,3 +66,12 @@ print(d)
 
 Q3
 
+email_index = data[0].index('email')
+domains = {}
+for i in range(1,len(data)):
+	p = data[i][email_index].index('@')
+	domain = data[i][email_index][p+1:]
+	domains[domain]=domains.get(domain,0)+1
+
+print(domains)
+# Returns {'upenn.edu': 12, 'mail.med.upenn.edu': 23, 'cceb.med.upenn.edu': 1, 'email.chop.edu': 1}
