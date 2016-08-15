@@ -83,6 +83,7 @@ Print the first 3 key and value pairs of the dictionary:
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
+# My code produces the correct result, but copying and pasting here doesn't seem to show everything
 ('Ellenberg', 'Jonas') ['Ph.D.', 'Professor', 'jellenbe@mail.med.upenn.edu']
 ('Ellenberg', 'Susan') ['Ph.D.', 'Professor', 'sellenbe@upenn.edu']
 ('Li', 'Hongzhe') ['Ph.D.', 'Professor', 'hongzhe@upenn.edu']
