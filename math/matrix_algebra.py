@@ -3,6 +3,7 @@ Q1
 # Matrix Algebra
 
 import numpy as np
+import math
 
 A = np.array([[1,2,3],[2,7,4]])
 B = np.array([[1,-1],[0,1]])
@@ -19,4 +20,10 @@ for m in matrix_list:
 
 Q2
 
+alpha = 6
+print(u + v)
+print(u - v)
+print(alpha*u)
+print(u.dot(v.transpose()))
+print(math.sqrt(u.dot(u.transpose())))
 
