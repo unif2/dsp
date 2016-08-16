@@ -27,3 +27,15 @@ print(alpha*u)
 print(u.dot(v.transpose()))
 print(math.sqrt(u.dot(u.transpose())))
 
+Q3
+
+print(A+C) # Not defined
+print(A - C.transpose())
+print(C.transpose() + 3*D)
+print(B.dot(A))
+print(B.dot(A.transpose())) # Not defined
+print(B.dot(C)) # Not defined
+print(C.dot(B))
+print((B.dot(B)).dot(B.dot(B)))
+print(A.dot(A.transpose()))
+print((D.transpose()).dot(D))
