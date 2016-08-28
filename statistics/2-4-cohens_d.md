@@ -53,3 +53,5 @@ print("Mean pregnancy length for all completed pregnancies: ", m0)
 # Result: difference in means = 0.078 weeks, Cohen's d = 0.029
 # It seems like first babies take longer.  Difference in means is about 0.029 standard deviations
 # It seems like the effect is three times less for pregnancy length than birth weight
+
+![alt text](https://github.com/unif2/dsp/blob/master/exercise1.png "Histograms for first babies and others")
