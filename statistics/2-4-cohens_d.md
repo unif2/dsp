@@ -4,6 +4,7 @@
 import nsfg
 import numpy as np
 import thinkplot
+import first
 
 preg = nsfg.ReadFemPreg()
 live = preg[preg.outcome == 1]
