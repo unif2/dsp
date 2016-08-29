@@ -21,6 +21,8 @@ thinkplot.Cdfs([cdf])
 
 thinkplot.Show(xlabel='random number', ylabel='CDF')
 
+![alt text](https://github.com/unif2/dsp/blob/master/exercise3_cdf.png "CDF for 1000 random numbers from random.random")
+
 # The CDF is approximately a straight line.  So we have a uniform distribution
 
 pmf = thinkstats2.Pmf(list)
@@ -28,3 +30,5 @@ pmf = thinkstats2.Pmf(list)
 thinkplot.Pmf(pmf, linewidth=0.1)
 
 thinkplot.Show(xlabel='random number')
+
+![alt text](https://github.com/unif2/dsp/blob/master/exercise3_pmf.png "PMF")
