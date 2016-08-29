@@ -23,7 +23,8 @@ thinkplot.Show(xlabel='random number', ylabel='CDF')
 
 ![alt text](https://github.com/unif2/dsp/blob/master/exercise3_cdf.png "CDF for 1000 random numbers from random.random")
 
-# The CDF is approximately a straight line.  So we have a uniform distribution
+# The CDF is approximately a straight line with slope 1.  So we have a uniform distribution, since x% of the numbers
+# are less than x, for any x in [0,1].
 
 pmf = thinkstats2.Pmf(list)
 
