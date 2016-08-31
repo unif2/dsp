@@ -131,20 +131,22 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    if not isinstance(s,str):
+    def not_bad(s):
+	import re
+	if not isinstance(s,str):
 		raise NotImplementedError
-	t = s.split()
+	t = re.findall(r"[\w']+|[.,:;!?$%#@&]", s)
 	if 'not' in t and 'bad' in t and t.index('bad') > t.index('not'):
 		a = t.index('not')
-        b = t.index('bad')
+		b = t.index('bad')
 		t[a]='good'
-        del(t[a+1:b+1])
+		del(t[a+1:b+1])
 		delimiter = ' '
-		z = delimiter.join(t)
+		z = delimiter.join(t[0:len(t)-1])
+		z += t[-1]
 		return z
 	else:
 		return s
-
 
 def front_back(a, b):
     """
