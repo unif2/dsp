@@ -38,13 +38,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-ls: list files in the working directory
-ls -a: list all files, including directory entries whose names begin with a dot (.).
-ls -l: Shows date and time, file size.  (The lowercase letter ``ell''.)  List in long format.  (See
-             below.)  If the output is to a terminal, a total sum for all the
-             file sizes is output on a line before the long listing.
-ls -t: Sort by time modified (most recently modified first) before sort-
-             ing the operands by lexicographical order.
+> ls: list files in the working directory
+> ls -a: list all files, including directory entries whose names begin with a dot (.).
+> ls -l: Shows date and time, file size.  (The lowercase letter ``ell''.)  List in long format.  (See
+>             below.)  If the output is to a terminal, a total sum for all the
+>             file sizes is output on a line before the long listing.
+> ls -t: Sort by time modified (most recently modified first) before sort-
+>             ing the operands by lexicographical order.
  
 
 ---
@@ -53,37 +53,37 @@ ls -t: Sort by time modified (most recently modified first) before sort-
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-ls -t: displays newest files first
-ls -R: displays all files, including all subdirectories
-ls -r: displays files in reverse order
-ls -d: displays only directories
-ls -p: display directories with /
+> ls -t: displays newest files first
+> ls -R: displays all files, including all subdirectories
+> ls -r: displays files in reverse order
+> ls -d: displays only directories
+> ls -p: display directories with /
 
 ---
 
 ###Q4.  Xargs   
 
-example 1: Finding all the files with .c extension and deleting them
+>example 1: Finding all the files with .c extension and deleting them
 
-$ ls
-one.c  one.h  two.c  two.h
+>$ ls
+>one.c  one.h  two.c  two.h
 
-$ find . -name "*.c" | xargs rm -rf
+>$ find . -name "*.c" | xargs rm -rf
 
-$ ls
-one.h  two.h
+>$ ls
+>one.h  two.h
 
-example 2: Finding all the files with the .c extension and listing the ones that have 'stdlib.h' inside them
+>example 2: Finding all the files with the .c extension and listing the ones that have 'stdlib.h' inside them
 
-$ find . -name '*.c' | xargs grep 'stdlib.h'
-./tgsthreads.c:#include
-./valgrind.c:#include
-./direntry.c:#include
-./xvirus.c:#include
-./temp.c:#include
-...
-...
-...
+>$ find . -name '*.c' | xargs grep 'stdlib.h'
+>./tgsthreads.c:#include
+>./valgrind.c:#include
+>./direntry.c:#include
+>./xvirus.c:#include
+>./temp.c:#include
+>...
+>...
+>...
 
 
 
