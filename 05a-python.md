@@ -177,15 +177,15 @@ date_stop = '05282015'
 ```
 >import datetime
 
-date_start=datetime.datetime.strptime("12312013","%m%d%Y")
+>date_start=datetime.datetime.strptime("12312013","%m%d%Y")
 
-date_stop=datetime.datetime.strptime("05282015","%m%d%Y")
+>date_stop=datetime.datetime.strptime("05282015","%m%d%Y")
 
-delta = date_stop - date_start
+>delta = date_stop - date_start
 
-print(delta.days)
+>print(delta.days)
 
-(513)
+>(513)
 
 
 c.  
@@ -195,37 +195,37 @@ date_stop = '14-Jul-2015'
 ```
 >import string
 
-import datetime
+>import datetime
 
-date_start = '15-Jan-1994'
+>date_start = '15-Jan-1994'
 
-date_stop = '14-Jul-2015'
+>date_stop = '14-Jul-2015'
 
-s=date_start.split('-')
+>s=date_start.split('-')
 
-t=date_stop.split('-')
+>t=date_stop.split('-')
 
-months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+>months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
 
-s[1]=months.index(s[1])+1
+>s[1]=months.index(s[1])+1
 
-t[1]=months.index(t[1])+1
+>t[1]=months.index(t[1])+1
 
-for i in range(3):
+>for i in range(3):
 
-  s[i]=int(s[i])
+>  s[i]=int(s[i])
 
-  t[i]=int(t[i])
+>  t[i]=int(t[i])
   
-start = datetime.datetime(s[2],s[1],s[0])
+>start = datetime.datetime(s[2],s[1],s[0])
 
-stop = datetime.datetime(t[2],t[1],t[0])
+>stop = datetime.datetime(t[2],t[1],t[0])
 
-delta = stop - start
+>delta = stop - start
 
-print(delta.days)
+>print(delta.days)
 
-(7850)
+>(7850)
 
 >> REPLACE THIS TEXT WITH YOUR RESPONSE  (answer will be in number of days)
 
