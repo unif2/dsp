@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
-I will be using vim.  It seems like the "safer" choice, according to the above text.
+> I will be using vim.  It seems like the "safer" choice, according to the above text.
 
 --
 
@@ -68,6 +68,6 @@ I will be using vim.  It seems like the "safer" choice, according to the above t
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-Either Atom or PyCharm.
+> Either Atom or PyCharm.
 
  
