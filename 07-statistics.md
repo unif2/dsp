@@ -93,7 +93,10 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist: probabilities are relative frequencies after many many drawn samples from the population of possible 
+> outcomes.  In the limit of infinite sampling, the probability approaches the truth (fixed) probability.
+> Bayesian: A probability is a measure of uncertainty.  0 means we are certain the event will not happen, 1 means we are 
+> certain the event will happen.  For a Bayesian, the probability can be updated in light of new data.
 
 ---
 
