@@ -96,7 +96,7 @@ How do frequentist and Bayesian statistics compare?
 >> Frequentist: probabilities are relative frequencies after many many drawn samples from the population of possible 
 > outcomes.  In the limit of infinite sampling, the probability approaches the truth (fixed) probability.
 > Bayesian: A probability is a measure of uncertainty.  0 means we are certain the event will not happen, 1 means we are 
-> certain the event will happen.  For a Bayesian, the probability can be updated in light of new data.
+> certain the event will happen.  For a Bayesian, before any data is taken, the probability is assigned from a distribution (called the prior) and is updated after new data is taken.
 
 ---
 
