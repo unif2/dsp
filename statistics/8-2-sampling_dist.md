@@ -69,5 +69,8 @@ plt.xlabel('n')
 plt.ylabel('Standard Error')
 
 plt.savefig('exercise8_stderr_plot.png')
+
+![alt text](https://github.com/unif2/dsp/blob/master/exercise8_cdf.png "Sampling Distribution for L")
+![alt text](https://github.com/unif2/dsp/blob/master/exercise8_stderr_plot.png "Standard Error versus n")
 	
 
