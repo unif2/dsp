@@ -97,5 +97,7 @@ print("Spearman's correlation is %r" %sc)
 ![alt text](https://github.com/unif2/dsp/blob/master/exercise7scatter.png "Scatter Plot of Birth Weight vs Age")
 ![alt text](https://github.com/unif2/dsp/blob/master/exercise7percentile.png "Percentiles of Birth Weight vs Age")
 
-# Pearson's correlation is around 0.07, while Spearman's correlation is around 0.09, a bit more than Pearson's.  The 
-# suggests a possible nonlinear relationship and/or the influence of outliers in the data 
+# Pearson's correlation is around 0.07, while Spearman's correlation is around 0.09, a bit more than Pearson's.  This 
+# suggests a possible nonlinear relationship and/or the influence of outliers in the data.
+# From the graph of percentiles we can see the steepest change in weight for ages between 15 and 25 and not as dramatic a 
+# change past age 25.  This observation also suggests a nonlinear relationship between the two variables.
