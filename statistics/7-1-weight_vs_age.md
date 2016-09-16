@@ -93,3 +93,6 @@ print("Pearson's correlation is %r" %pc)
 sc = SpearmanCorr(live.agepreg, live.totalwgt_lb)
 
 print("Spearman's correlation is %r" %sc)
+
+![alt text](https://github.com/unif2/dsp/blob/master/exercise7scatter.png "Scatter Plot of Birth Weight vs Age")
+![alt text](https://github.com/unif2/dsp/blob/master/exercise7percentile.png "Percentiles of Birth Weight vs Age")
