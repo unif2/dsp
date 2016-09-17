@@ -84,4 +84,7 @@ for lam in lam_vals:
 
 print(errors) # They are increasing.
 
+![alt text](https://github.com/unif2/dsp/blob/master/exercise10.png "Sampling Distribution for lambda")
+
+
 ---
