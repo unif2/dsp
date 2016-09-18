@@ -60,7 +60,7 @@ thinkplot.Show(xlabel='test statistic', ylabel='CDF')
 
 ![alt text](https://github.com/unif2/dsp/blob/master/exercise11_prglngth.png "CDF of difference in mean pregnancy length under the null hypothesis using Resampling")
 
-data = firsts.totalwgt_lb.values, others.totalwgt_lb.values
+data = firsts.totalwgt_lb.dropna().values, others.totalwgt_lb.dropna().values
 
 ht = DiffMeansResample(data)
 
