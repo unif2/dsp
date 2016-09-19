@@ -127,3 +127,11 @@ def linear_merge(list1, list2):
 	merged += sorted(list1 + list2, reverse = True)
 	merged.reverse()
 	return merged
+	
+	# Alternate solution suggested by Gina Soileau:
+	
+	lst = list1 + list2
+	lst.sort()
+	return lst
+	
+	
